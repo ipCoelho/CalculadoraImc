@@ -118,6 +118,7 @@ section{
 
 .calculadora #resultado{
     height: 100px;
+    width: 240px;
     background-color: var(--cor-destaque);
     font-size: 1rem;
     border-radius: 5px;

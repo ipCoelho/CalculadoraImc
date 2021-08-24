@@ -9,8 +9,7 @@ const btnCalcular = document.getElementById("botao")
 
 //funções
 function calcularImc() {
-    let imc = peso.value / altura.value ** 2
-    imc.fixedTo(2)
+    let imc = parseFloat(peso.value) / parseFloat(altura.value) ** 2
     nome = valueNome.value
     if (imc < 18.5) {
         resultado.textContent = nome+", seu imc é "+imc+". "+"Você está abaixo do peso."
@@ -36,7 +35,6 @@ function calcularImc() {
                 }
             }
         }
-    
     }
 }
 
