@@ -116,7 +116,7 @@ section{
     border-radius: 5px;
 }
 
-.calculadora #resultado{
+.calculadora #divResult{
     height: 100px;
     width: 240px;
     background-color: var(--cor-destaque);

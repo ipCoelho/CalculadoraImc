@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="professor.js" defer></script>
 </head>
 <body>
     <header>
@@ -55,18 +54,18 @@
             <form>
                 <div id="nome" class="campo">
                     <label>Nome:</label>
-                    <input type="text" id="valueNome">
+                    <input type="text" id="iptName" required>
                 </div>
                 <div id="altura" class="campo unidade" data-unidade="metros">
                     <label>Altura:</label>
-                    <input type="text" id="valueAltura">
+                    <input type="number" id="iptHeight" step="any" required>
                 </div>
                 <div id="peso" class="campo unidade" data-unidade="quilos">
                     <label>Peso:</label>
-                    <input type="text" id="valuePeso">
+                    <input type="number" id="iptWeight" required>
                 </div>
-                <button id="botao" type="button">CALCULAR</button>
-                <div id="resultado"></div>
+                <button id="button" type="button">CALCULAR</button>
+                <div id="divResult"></div>
             </form>
         </section>
     </main>
@@ -74,4 +73,6 @@
         <span>Copyright &copy; 2021 | Israel Pablo</span>
     </footer>
 </body>
+
+<script src="professor.js" defer></script>
 </html>
